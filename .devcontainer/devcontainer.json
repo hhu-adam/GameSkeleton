@@ -1,0 +1,32 @@
+{
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "game",
+  "workspaceFolder": "/home/node/game",
+  "forwardPorts": [3000],
+  // These settings make sure that the created files (lake-packages etc.) are owned
+  // by the user and not `root`.
+  // see also https://containers.dev/implementors/json_reference/
+  // and https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user
+  "remoteUser": "node",
+  "updateRemoteUserUID": true,
+  // I don't know why I need this, but I did...
+  "overrideCommand": true,
+  "onCreateCommand": {
+    "npm_install": "(cd ~/lean4game && npm install)",
+    "lake_build": "(cd ~/game && lake clean && lake exe cache get && lake build)"
+  },
+  "postStartCommand": "cd ~/lean4game && export VITE_LEAN4GAME_SINGLE=true && npm start",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "remote.autoForwardPorts": false
+      },
+      "extensions": [
+        "leanprover.lean4"
+      ]
+    },
+    "codespaces": {
+      "openFiles": ["Game.lean"]
+    }
+  }
+}
