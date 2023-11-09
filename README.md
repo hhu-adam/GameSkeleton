@@ -1,12 +1,26 @@
+# Game Skeleton
 
+This is a template for creating a game with [Lean4game](https://github.com/leanprover-community/lean4game/). It contains a single Level plus the files needed for a local development setup.
 
-# How to update your Game
+TODO: Move documentation from the NNG to here.
 
-## New Lean version
+Also look at the [Natural Number Game](https://github.com/leanprover-community/NNG4) for inspiration.
 
-You can update the game to any Lean version by simply editing the `lean-toolchain`.
+## Local Developing Setup
 
-First, make sure the co `v4.X.0`-tag exists at the [lean4game repo](https://github.com/leanprover-community/lean4game/tags).
+TODO
+
+## Publishing a game
+
+TODO: implement a way to publish games directly at adam.math.hhu.de
+
+## How to update your Game
+
+### New Lean version
+
+You can update the game to any Lean version by simply editing the `lean-toolchain` to contain the new lean version `leanprover/lean:v4.X.0`.
+
+First, make sure there exists a correct `v4.X.0`-tag at the [lean4game repo](https://github.com/leanprover-community/lean4game/tags).
 
 Then, depending on the setup you use, do one of the following:
 
@@ -16,7 +30,7 @@ Then, depending on the setup you use, do one of the following:
 
 This will update `lean4game` and `mathlib` in your project to the new lean version.
 
-## Newest developing setup
+### Newest developing setup
 
 There are a few files in your game repository which are used for the developing setup
 (dev container/codespaces/gitpod). You will need to update these files manually if they're outdated.
