@@ -18,7 +18,7 @@ TODO: implement a way to publish games directly at adam.math.hhu.de
 
 ### New Lean version
 
-You can update the game to any Lean version by simply editing the `lean-toolchain` to contain the new lean version `leanprover/lean:v4.X.0`.
+You can update the game to any Lean version by simply editing the `lean-toolchain` to contain the new lean version `leanprover/lean4:v4.X.0`.
 
 First, make sure there exists a correct `v4.X.0`-tag at the [lean4game repo](https://github.com/leanprover-community/lean4game/tags).
 
