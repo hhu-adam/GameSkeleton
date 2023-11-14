@@ -36,7 +36,10 @@ jobs:
       - name: building game
         run: env LEAN_ABORT_ON_PANIC=1 lake build
 
-      - name: Upload artifacts
+      - name: zip built game
+        run: zip game.zip ./* -r
+
+      - name: upload zip file
         uses: actions/upload-artifact@v3
         with:
           name: built-lean-game
