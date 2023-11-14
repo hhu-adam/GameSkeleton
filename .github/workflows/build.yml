@@ -39,7 +39,7 @@ jobs:
         run: env LEAN_ABORT_ON_PANIC=1 lake build
 
       - name: delete unused mathlib cache
-        run: find ./lake-packages/mathlib/build/lib -type f -name "*" \! -neweraa ./tmp_timestamp -delete
+        run: find ./lake-packages/mathlib/build/lib -type f -name "*" \! -neweraa ./tmp_timestamp -delete -print
 
       - name: delete timestamp file
         run: rm ./tmp_timestamp
