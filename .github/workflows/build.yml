@@ -23,7 +23,7 @@ jobs:
           lean --version
           lake --version
 
-      - name: get cache
+      - name: get mathlib cache
         continue-on-error: true
         run: |
           lake exe cache clean
@@ -38,8 +38,9 @@ jobs:
       - name: building game
         run: env LEAN_ABORT_ON_PANIC=1 lake build
 
-      - name: delete unused mathlib cache
-        run: find ./lake-packages/mathlib/build/lib -type f -name "*" \! -neweraa ./tmp_timestamp -delete -print
+      # - name: delete unused mathlib cache
+      #   continue-on-error: true
+      #   run: find ./lake-packages/mathlib/build/lib -type f -name "*" \! -neweraa ./tmp_timestamp -delete -print
 
       - name: delete timestamp file
         run: rm ./tmp_timestamp
