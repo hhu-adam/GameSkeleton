@@ -32,9 +32,17 @@ jobs:
           # The 'sleep 1' is small pause to let the network recover.
           lake exe cache get || (sleep 1; lake exe cache get)
 
+      - name: create timestamp file
+        run: touch tmp_timestamp
 
       - name: building game
         run: env LEAN_ABORT_ON_PANIC=1 lake build
+
+      - name: delete unused mathlib cache
+        run: find ./lake-packages/mathlib/build/lib -type f -name "*" \! -neweraa ./tmp_timestamp -delete
+
+      - name: delete timestamp file
+        run: rm ./tmp_timestamp
 
       - name: zip built game
         run: zip game.zip ./* -r
