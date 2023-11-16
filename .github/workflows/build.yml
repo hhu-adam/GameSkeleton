@@ -49,12 +49,16 @@ jobs:
         run: tar -czvf ../game.tar.gz .
         # run: zip game.zip ./* -r
 
+      - name: hack. move compressed artifact back
+        run: mv ../game.tar.gz ./game.tar.gz
+        # run: zip game.zip ./* -r
+
       - name: upload compressed game folder
         uses: actions/upload-artifact@v3
         with:
           name: built-lean-game
           path: |
-            ../game.tar.gz
+            game.tar.gz
 
       # - name: What next?
       #   run: echo "To export the game to the Game Server, open https://adam.math.hhu.de/import/trigger/${GITHUB_REPOSITORY,,} \n Afterwards, you can play the game at https://adam.math.hhu.de/#/g/${GITHUB_REPOSITORY,,}"
