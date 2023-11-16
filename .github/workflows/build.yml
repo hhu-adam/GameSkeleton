@@ -56,7 +56,7 @@ jobs:
       - name: upload compressed game folder
         uses: actions/upload-artifact@v3
         with:
-          name: built-lean-game
+          name: build-for-server-import
           path: |
             game.tar.gz
 
