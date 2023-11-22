@@ -46,12 +46,12 @@ jobs:
         run: rm ./tmp_timestamp
 
       - name: compress built game
-        run: tar -czvf ../game.tar.gz .
-        # run: zip game.zip ./* -r
+        #run: tar -czvf ../game.tar.gz .
+        run: zip game.zip ./* -r
 
-      - name: hack. move compressed artifact back
-        run: mv ../game.tar.gz ./game.tar.gz
-        # run: zip game.zip ./* -r
+      # - name: hack. move compressed artifact back
+      #   run: mv ../game.tar.gz ./game.tar.gz
+      #   # run: zip game.zip ./* -r
 
       - name: upload compressed game folder
         uses: actions/upload-artifact@v3
