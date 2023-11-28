@@ -47,7 +47,7 @@ jobs:
 
       - name: compress built game
         #run: tar -czvf ../game.tar.gz .
-        run: zip game.zip ./* -r
+        run: zip game.zip . -r
 
       # - name: hack. move compressed artifact back
       #   run: mv ../game.tar.gz ./game.tar.gz
