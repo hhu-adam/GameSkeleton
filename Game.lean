@@ -22,7 +22,7 @@ Languages "English"
 CaptionShort "Game Template"
 CaptionLong "You should use this game as a template for your own game and add your own levels."
 -- Prerequisites "" -- add this if your game depends on other games
--- Image "" -- TODO: Not implemented
+-- CoverImage "images/cover.png"
 
 /-! Build the game. Show's warnings if it found a problem with your game. -/
 MakeGame
