@@ -1,0 +1,75 @@
+msgid ""
+msgstr "Project-Id-Version: Game v4.6.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Thu Feb 29 12:11:54 2024\n"
+"Last-Translator: \n"
+"Language-Team: none\n"
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#: Game.Levels.DemoWorld.L01_HelloWorld
+msgid "Hello World"
+msgstr ""
+
+#: Game.Levels.DemoWorld.L01_HelloWorld
+msgid "This text is shown as first message when the level is played.\n"
+"You can insert hints in the proof below. They will appear in this side panel\n"
+"depending on the proof a user provides."
+msgstr ""
+
+#: Game.Levels.DemoWorld.L01_HelloWorld
+msgid "You can either start using `h` or `g`."
+msgstr ""
+
+#: Game.Levels.DemoWorld.L01_HelloWorld
+msgid "You should use `«{h}»` now."
+msgstr ""
+
+#: Game.Levels.DemoWorld.L01_HelloWorld
+msgid "You should use `«{g}»` now."
+msgstr ""
+
+#: Game.Levels.DemoWorld.L01_HelloWorld
+msgid "This last message appears if the level is solved."
+msgstr ""
+
+#: Game.Levels.DemoWorld
+msgid "Demo World"
+msgstr ""
+
+#: Game.Levels.DemoWorld
+msgid "\n"
+"This introduction is shown before one enters level 1 of the demo world. Use markdown.\n"
+""
+msgstr ""
+
+#: Game
+msgid "Hello World Game"
+msgstr ""
+
+#: Game
+msgid "\n"
+"This text appears on the starting page where one selects the world/level to play.\n"
+"You can use markdown.\n"
+""
+msgstr ""
+
+#: Game
+msgid "\n"
+"Here you can put additional information about the game. It is accessible\n"
+"from the starting through the drop-down menu.\n"
+"\n"
+"For example: Game version, Credits, Link to Github and Zulip, etc.\n"
+"\n"
+"Use markdown.\n"
+""
+msgstr ""
+
+#: Game
+msgid "Game Template"
+msgstr ""
+
+#: Game
+msgid "You should use this game as a template for your own game and add your own levels."
+msgstr ""
