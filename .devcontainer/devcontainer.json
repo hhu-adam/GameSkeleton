@@ -12,12 +12,10 @@
   // I don't know why I need this, but I did...
   "overrideCommand": true,
   "onCreateCommand": {
-    "npm_install": "(cd ~/lean4game && npm install)",
-    // BUG: Apparently `&& lake exe cache get` was needed here because the update hook was broken.
-    // should been fixed in https://github.com/leanprover-community/mathlib4/pull/8755
-    "lake_build": "(cd ~/game && lake update -R && lake exe cache get && lake build)"
+    "npm_install": "(cd ~/lean4game && npm install) || echo \"ERROR: `cd ~/lean4game && npm install` failed\", try running it manually in your dev-container!",
+    "lake_build": "(cd ~/game && lake update -R && lake build) || echo \"ERROR: `cd ~/game && lake update -R && lake exe cache get && lake build` failed!, try running it manually in your dev-container!\""
   },
-  "postStartCommand": "cd ~/lean4game && export VITE_LEAN4GAME_SINGLE=true && npm start",
+  "postStartCommand": "(cd ~/lean4game && export VITE_LEAN4GAME_SINGLE=true && npm start) || echo \"ERROR: Did not start game server! See if you have warnings above, then try to start it manually using `cd ~/lean4game && export VITE_LEAN4GAME_SINGLE=true && npm start`!\"",
   "customizations": {
     "vscode": {
       "settings": {

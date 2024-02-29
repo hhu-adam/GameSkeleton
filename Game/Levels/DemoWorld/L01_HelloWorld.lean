@@ -10,7 +10,7 @@ You can insert hints in the proof below. They will appear in this side panel
 depending on the proof a user provides."
 
 Statement (h : x = 2) (g: y = 4) : x + x = y := by
-  Hint "You can either start using `h` or `g`."
+  Hint "You can either start using `{h}` or `{g}`."
   Branch
     rw [g]
     Hint "You should use `{h}` now."

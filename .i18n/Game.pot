@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.6.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Thu Feb 29 12:11:54 2024\n"
+"POT-Creation-Date: Thu Feb 29 16:58:28 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -19,7 +19,7 @@ msgid "This text is shown as first message when the level is played.\n"
 msgstr ""
 
 #: Game.Levels.DemoWorld.L01_HelloWorld
-msgid "You can either start using `h` or `g`."
+msgid "You can either start using `«{h}»` or `«{g}»`."
 msgstr ""
 
 #: Game.Levels.DemoWorld.L01_HelloWorld
