@@ -1,0 +1,23 @@
+{"level completed! 🎉": "Level gelöst! 🎉",
+ "level completed with warnings… 🎭": "Level mit Warnungen beendet… 🎭",
+ "intermediate goal solved! 🎉": "Zwischenziel gelöst! 🎉",
+ "You should use this game as a template for your own game and add your own levels.":
+ "Dieses Spiel sollte als Grundgerüst für eigene Spiele verwendet und eigene Levels hinzugefügt werden.",
+ "You should use `«{h}»` now.": "Jetzt sollte `«{h}»` verwendet werden.",
+ "You should use `«{g}»` now.": "Jetzt sollte `«{g}»` verwendet werden.",
+ "You can either start using `«{h}»` or `«{g}»`.":
+ "Anfangen kann man mit der Benützung von `«{h}»` oder `«{g}»`.",
+ "This text is shown as first message when the level is played.\nYou can insert hints in the proof below. They will appear in this side panel\ndepending on the proof a user provides.":
+ "Dieser Text erscheint als erste Nachricht beim Spielen des Levels.\n\"Hints\" können in den folgenden Beweis eingefügt werden. Diese erscheinen hier in diesem Side-Panel,\nabhängig von dem Beweisstand des Spielers.",
+ "This text appears on the starting page where one selects the world/level to play.\nYou can use markdown.":
+ "Dieser Text erscheint auf der Startseite, wo man Welten/Levels zum spielen auswählt.\nMan kann Markdown verwenden.",
+ "This last message appears if the level is solved.":
+ "Diese letzte Nachricht erscheint beim erfolgreichen lösen eines Levels.",
+ "This introduction is shown before one enters level 1 of the demo world. Use markdown.":
+ "Diese Einführung wird gezeigt, bevor man Level 1 der Beispielwelt öffnet. Man kann Markdown verwenden.",
+ "Here you can put additional information about the game. It is accessible\nfrom the starting through the drop-down menu.\n\nFor example: Game version, Credits, Link to Github and Zulip, etc.\n\nUse markdown.":
+ "Hier können zusätzliche Inforamtionen über das Spiel hingeschrieben werden. Man erreicht diese\nvon der Startseite via Dropdown-Menü.\n\nZum Beispiel: Spielversion, Credits, Link auf Github und Zulip, etc.\n\nMan kann Markdown verwenden.",
+ "Hello World Game": "Hallo-Welt-Spiel",
+ "Hello World": "Hallo Welt",
+ "Game Template": "Spiel-Grundgerüst",
+ "Demo World": "Beispielwelt"}

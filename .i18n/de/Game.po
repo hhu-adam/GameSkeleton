@@ -1,0 +1,114 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Game v4.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Wed Apr 10 15:31:40 2024\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: none\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: GameServer.RpcHandlers
+msgid "level completed! 🎉"
+msgstr "Level gelöst! 🎉"
+
+#: GameServer.RpcHandlers
+msgid "level completed with warnings… 🎭"
+msgstr "Level mit Warnungen beendet… 🎭"
+
+#: GameServer.RpcHandlers
+msgid "intermediate goal solved! 🎉"
+msgstr "Zwischenziel gelöst! 🎉"
+
+#: Game.Levels.DemoWorld.L01_HelloWorld
+msgid "Hello World"
+msgstr "Hallo Welt"
+
+#: Game.Levels.DemoWorld.L01_HelloWorld
+msgid ""
+"This text is shown as first message when the level is played.\n"
+"You can insert hints in the proof below. They will appear in this side "
+"panel\n"
+"depending on the proof a user provides."
+msgstr ""
+"Dieser Text erscheint als erste Nachricht beim Spielen des Levels.\n"
+"\"Hints\" können in den folgenden Beweis eingefügt werden. Diese erscheinen "
+"hier in diesem Side-Panel,\n"
+"abhängig von dem Beweisstand des Spielers."
+
+#: Game.Levels.DemoWorld.L01_HelloWorld
+msgid "You can either start using `«{h}»` or `«{g}»`."
+msgstr "Anfangen kann man mit der Benützung von `«{h}»` oder `«{g}»`."
+
+#: Game.Levels.DemoWorld.L01_HelloWorld
+msgid "You should use `«{h}»` now."
+msgstr "Jetzt sollte `«{h}»` verwendet werden."
+
+#: Game.Levels.DemoWorld.L01_HelloWorld
+msgid "You should use `«{g}»` now."
+msgstr "Jetzt sollte `«{g}»` verwendet werden."
+
+#: Game.Levels.DemoWorld.L01_HelloWorld
+msgid "This last message appears if the level is solved."
+msgstr ""
+"Diese letzte Nachricht erscheint beim erfolgreichen lösen eines Levels."
+
+#: Game.Levels.DemoWorld
+msgid "Demo World"
+msgstr "Beispielwelt"
+
+#: Game.Levels.DemoWorld
+msgid ""
+"This introduction is shown before one enters level 1 of the demo world. Use "
+"markdown."
+msgstr ""
+"Diese Einführung wird gezeigt, bevor man Level 1 der Beispielwelt öffnet. "
+"Man kann Markdown verwenden."
+
+#: Game
+msgid "Hello World Game"
+msgstr "Hallo-Welt-Spiel"
+
+#: Game
+msgid ""
+"This text appears on the starting page where one selects the world/level to "
+"play.\n"
+"You can use markdown."
+msgstr ""
+"Dieser Text erscheint auf der Startseite, wo man Welten/Levels zum spielen "
+"auswählt.\n"
+"Man kann Markdown verwenden."
+
+#: Game
+msgid ""
+"Here you can put additional information about the game. It is accessible\n"
+"from the starting through the drop-down menu.\n"
+"\n"
+"For example: Game version, Credits, Link to Github and Zulip, etc.\n"
+"\n"
+"Use markdown."
+msgstr ""
+"Hier können zusätzliche Inforamtionen über das Spiel hingeschrieben werden. "
+"Man erreicht diese\n"
+"von der Startseite via Dropdown-Menü.\n"
+"\n"
+"Zum Beispiel: Spielversion, Credits, Link auf Github und Zulip, etc.\n"
+"\n"
+"Man kann Markdown verwenden."
+
+#: Game
+msgid "Game Template"
+msgstr "Spiel-Grundgerüst"
+
+#: Game
+msgid ""
+"You should use this game as a template for your own game and add your own "
+"levels."
+msgstr ""
+"Dieses Spiel sollte als Grundgerüst für eigene Spiele verwendet und eigene "
+"Levels hinzugefügt werden."

@@ -1,12 +1,24 @@
 msgid ""
-msgstr "Project-Id-Version: Game v4.6.0\n"
+msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Thu Feb 29 16:58:28 2024\n"
+"POT-Creation-Date: Wed Apr 10 15:31:40 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit"
+
+#: GameServer.RpcHandlers
+msgid "level completed! 🎉"
+msgstr ""
+
+#: GameServer.RpcHandlers
+msgid "level completed with warnings… 🎭"
+msgstr ""
+
+#: GameServer.RpcHandlers
+msgid "intermediate goal solved! 🎉"
+msgstr ""
 
 #: Game.Levels.DemoWorld.L01_HelloWorld
 msgid "Hello World"
@@ -39,9 +51,7 @@ msgid "Demo World"
 msgstr ""
 
 #: Game.Levels.DemoWorld
-msgid "\n"
-"This introduction is shown before one enters level 1 of the demo world. Use markdown.\n"
-""
+msgid "This introduction is shown before one enters level 1 of the demo world. Use markdown."
 msgstr ""
 
 #: Game
@@ -49,21 +59,17 @@ msgid "Hello World Game"
 msgstr ""
 
 #: Game
-msgid "\n"
-"This text appears on the starting page where one selects the world/level to play.\n"
-"You can use markdown.\n"
-""
+msgid "This text appears on the starting page where one selects the world/level to play.\n"
+"You can use markdown."
 msgstr ""
 
 #: Game
-msgid "\n"
-"Here you can put additional information about the game. It is accessible\n"
+msgid "Here you can put additional information about the game. It is accessible\n"
 "from the starting through the drop-down menu.\n"
 "\n"
 "For example: Game version, Credits, Link to Github and Zulip, etc.\n"
 "\n"
-"Use markdown.\n"
-""
+"Use markdown."
 msgstr ""
 
 #: Game
