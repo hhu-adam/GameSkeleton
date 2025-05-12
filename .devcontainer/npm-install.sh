@@ -1,5 +1,5 @@
 export LEAN_VERSION="$(cat lean-toolchain | grep -oE '[^:]+$')"
 cd ..
-git clone --depth 1 --branch $LEAN_VERSION https://github.com/leanprover-community/lean4game.git
-cd lean4game
+wget -O - https://github.com/leanprover-community/lean4game/archive/main.zip | jar xv
+cd lean4game-main
 npm install
