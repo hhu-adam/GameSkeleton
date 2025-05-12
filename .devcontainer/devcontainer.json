@@ -4,7 +4,7 @@
     "npm_install": "bash .devcontainer/npm-install.sh",
     "lake_build": "bash .devcontainer/lean-install.sh"
   },
-  "postAttachCommand": "(cd ../lean4game && export VITE_LEAN4GAME_SINGLE=true && npm start) || echo \"ERROR: Did not start game server! See if you have warnings above, then try to start it manually using `cd ~/lean4game && export VITE_LEAN4GAME_SINGLE=true && npm start`!\"",
+  "postAttachCommand": "bash .devcontainer/run-server.sh",
   "customizations": {
     "vscode": {
       "settings": {
