@@ -14,3 +14,5 @@ The documentation about how to use this template are at the [lean4game repositor
 - Once you've created your repo from this template, click the green "Code" button and
   choose "Codespaces" > "Create codespace on main".
 - After a few minutes, your Codespace should be ready for you to work on.
+  Open a terminal and run "bash .devcontainer/open-game.sh" to open
+  your browser to the game.
