@@ -1,10 +1,10 @@
 {
   "forwardPorts": [3000],
-  "onCreateCommand": {
-    "npm_install": "bash .devcontainer/npm-install.sh",
-    "lake_build": "bash .devcontainer/lean-install.sh"
-  },
-  "postAttachCommand": "bash .devcontainer/run-server.sh",
+  // "onCreateCommand": {
+  //   "npm_install": "bash .devcontainer/npm-install.sh",
+  //   "lake_build": "bash .devcontainer/lean-install.sh"
+  // },
+  // "postAttachCommand": "bash .devcontainer/run-server.sh",
   "customizations": {
     "vscode": {
       "settings": {
