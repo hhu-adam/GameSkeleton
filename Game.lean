@@ -18,7 +18,7 @@ Use markdown.
 "
 
 /-! Information to be displayed on the servers landing page. -/
-Languages "English"
+Languages "en"
 CaptionShort "Game Template"
 CaptionLong "You should use this game as a template for your own game and add your own levels."
 -- Prerequisites "" -- add this if your game depends on other games

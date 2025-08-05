@@ -18,7 +18,6 @@ def RemoteGameServer : Dependency := {
   src? := DependencySrc.git "https://github.com/leanprover-community/lean4game.git" leanVersion "server"
   version? := s!"git#{leanVersion}"
   opts := ∅
-
 }
 
 /- Choose GameServer dependency depending on the environment variable `LEAN4GAME`. -/
