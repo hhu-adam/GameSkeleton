@@ -36,11 +36,7 @@ Note: If your package (like `mathlib` or `Std`) has tags of the form `v4.X.0` th
 you can use `require mathlib from git "[URL]" @ leanVersion`
  -/
 
-
-
--- require "leanprover-community" / mathlib @ s!"git#{leanVersion}"
-
-
+require "leanprover-community" / mathlib @ git leanVersion
 
 /-! # END USER SECTION -/
 
@@ -50,11 +46,11 @@ you can use `require mathlib from git "[URL]" @ leanVersion`
 package Game where
   moreLeanArgs := #[
     "-Dtactic.hygienic=false",
-    "-Dlinter.unusedVariables.funArgs=false",
+    "-Dlinter.all=false",
     "-Dtrace.debug=false"]
   moreServerOptions := #[
     ⟨`tactic.hygienic, false⟩,
-    ⟨`linter.unusedVariables.funArgs, true⟩,
+    ⟨`linter.all, false⟩,
     ⟨`trace.debug, true⟩]
   weakLeanArgs := #[]
 
