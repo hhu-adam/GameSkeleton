@@ -3,48 +3,17 @@ run-name: Build the game and save artifact
 on:
   workflow_dispatch:
   push:
-    branches: [ "main" ]
+    branches:
+    - "main"
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-
-      - name: install elan
-        run: |
-          set -o pipefail
-          curl -sSfL https://github.com/leanprover/elan/releases/download/v3.0.0/elan-x86_64-unknown-linux-gnu.tar.gz | tar xz
-          ./elan-init -y --default-toolchain none
-          echo "$HOME/.elan/bin" >> $GITHUB_PATH
-
       - uses: actions/checkout@v4
 
-      - name: print lean and lake versions
-        run: |
-          lean --version
-          lake --version
-
-        # Note: this would also happen in the lake post-update-hook
-      - name: get mathlib cache
-        continue-on-error: true
-        run: |
-          lake exe cache clean
-          # We've been seeing many failures at this step recently because of network errors.
-          # As a band-aid, we try twice.
-          # The 'sleep 1' is small pause to let the network recover.
-          lake exe cache get Game || (sleep 1; lake exe cache get Game)
-
-      - name: create timestamp file
-        run: touch tmp_timestamp
-
-      - name: building game
-        run: env LEAN_ABORT_ON_PANIC=1 lake build
-
-      - name: delete unused mathlib cache
-        continue-on-error: true
-        run: find . -type d \( -name "*/.git" \) -delete -print && find ./.lake/ -type f \( -name "*.c" -o -name "*.hash" -o -name "*.trace" \) -delete -print && find ./.lake/ -type f \( -name "*.olean" \) \! -neweraa ./tmp_timestamp -delete -print
-
-      - name: delete timestamp file
-        run: rm ./tmp_timestamp
+      - uses: leanprover/lean-action@v1
+        with:
+          use-github-cache: false
 
       - name: compress built game
         #run: tar -czvf ../game.tar.gz .
