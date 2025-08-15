@@ -1,5 +1,5 @@
 msgid ""
-msgstr "Project-Id-Version: Game v4.21.0\n"
+msgstr "Project-Id-Version: Game v4.22.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-15\n"
 "Last-Translator: \n"
