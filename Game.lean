@@ -5,7 +5,7 @@ Title "Hello World Game"
 Introduction
 "
 This text appears on the starting page where one selects the world/level to play.
-You can use markdown.
+You can use **markdown**.
 "
 
 Info "
@@ -14,7 +14,7 @@ from the starting through the drop-down menu.
 
 For example: Game version, Credits, Link to Github and Zulip, etc.
 
-Use markdown.
+Use **markdown**.
 "
 
 /-! Information to be displayed on the servers landing page. -/
