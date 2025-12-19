@@ -1,10 +1,23 @@
 {
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "game",
+  "workspaceFolder": "/home/node/game",
   "forwardPorts": [3000],
+  // These settings make sure that the created files (lake-packages etc.) are owned
+  // by the user and not `root`.
+  // see also https://containers.dev/implementors/json_reference/
+  // and https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user
+  "remoteUser": "node",
+  "updateRemoteUserUID": true,
+  // I don't know why I need this, but I did...
+  "overrideCommand": true,
   "onCreateCommand": {
-    "npm_install": "bash .devcontainer/npm-install.sh",
-    "lake_build": "bash .devcontainer/lean-install.sh"
+    "npm_install": "(cd ~/lean4game && npm install)",
+    // BUG: Apparently `&& lake exe cache get` was needed here because the update hook was broken.
+    // should been fixed in https://github.com/leanprover-community/mathlib4/pull/8755
+    "lake_build": "(cd ~/game && lake update -R && lake exe cache get && lake build)"
   },
-  "postAttachCommand": "bash .devcontainer/run-server.sh",
+  "postStartCommand": "cd ~/lean4game && export VITE_LEAN4GAME_SINGLE=true && npm start",
   "customizations": {
     "vscode": {
       "settings": {
