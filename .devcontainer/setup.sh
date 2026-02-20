@@ -1,5 +1,5 @@
 # Install Lean4
-export LEAN_VERSION="$(cat ../lean-toolchain)"
+export LEAN_VERSION="$(cat lean-toolchain)"
 echo "LEAN_VERSION is: $LEAN_VERSION"
 curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -s -- -y --default-toolchain $LEAN_VERSION;
 echo 'export PATH="$HOME/.elan/bin:$PATH"' >> ~/.bashrc
