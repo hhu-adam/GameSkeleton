@@ -35,7 +35,7 @@ Deactivate local version with `lake update -R`.
 def RemoteGameServer : Dependency := {
   name := `GameServer
   scope := "hhu-adam"
-  src? := DependencySrc.git "https://github.com/hhu-adam/leangame.git" leanVersion "server/lean"
+  src? := DependencySrc.git "https://github.com/hhu-adam/GameServer.git" leanVersion .none
   version := .git leanVersion
   opts := ∅
 }

@@ -6,9 +6,9 @@ This is a template for creating a game with [lean4game](https://github.com/leanp
 
 The documentation about how to use this template are at the [lean4game repository](https://github.com/leanprover-community/lean4game/):
 
-* [Creating a new game](https://github.com/leanprover-community/lean4game/blob/main/doc/create_game.md)
-  * [Updating an existing game](https://github.com/leanprover-community/lean4game/blob/main/doc/update_game.md)
-  * [Running a game locally](https://github.com/leanprover-community/lean4game/blob/main/doc/running_locally.md)
+- [Creating a new game](https://github.com/leanprover-community/lean4game/blob/main/doc/create_game.md)
+  - [Updating an existing game](https://github.com/leanprover-community/lean4game/blob/main/doc/update_game.md)
+  - [Running a game locally](https://github.com/leanprover-community/lean4game/blob/main/doc/running_locally.md)
 
 ## Quick start
 
@@ -34,3 +34,9 @@ The documentation about how to use this template are at the [lean4game repositor
 
   CTRL + Click on http://localhost:3000/, and you will be referred to the version of your game hosted
   in the Codespace.
+
+## Contribute
+
+This repo is created as a subtree of https://github.com/hhu-adam/leangame.
+
+Any issues, PRs and other changes should be made to the parent repo.
