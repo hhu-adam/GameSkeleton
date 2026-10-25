@@ -1,5 +1,5 @@
 {
-  "name": "leangame-dev",
+  "name": "game",
 
   "build": {
     "dockerfile": "Dockerfile"
@@ -26,5 +26,4 @@
   "containerUser": "node",
 
   "runArgs": ["--cap-drop=ALL", "--security-opt=no-new-privileges:true"]
-
 }
