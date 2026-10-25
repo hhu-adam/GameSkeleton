@@ -4,16 +4,27 @@ on:
   workflow_dispatch:
   push:
     branches:
-    - "main"
+      - 'main'
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - uses: leanprover/lean-action@v1
-        with:
-          use-github-cache: false
+      # `lean-action` refuses to run without a `lake-manifest.json`, but we do not want to include
+      # the manifest from the `leangame` repo.
+      # When using this template, you can replace the following steps with
+      # - uses: leanprover/lean-action@v1
+      #   with:
+      #     use-github-cache: false
+      - name: install elan
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: update dependencies
+        run: lake update -R --keep-toolchain
+      - name: build game
+        run: lake build
 
       - name: compress built game
         #run: tar -czvf ../game.tar.gz .
