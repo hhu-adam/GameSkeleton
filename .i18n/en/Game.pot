@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.35.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-25\n"
+"POT-Creation-Date: 2026-10-26\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -9,6 +9,10 @@ msgstr "Project-Id-Version: Game v4.35.0\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Basepath: ../..\n"
 "X-Poedit-SearchPath-0: ."
+
+#: Game.lean:19
+msgid "A small template game."
+msgstr ""
 
 #: Game/Doc/Definitions.lean:6
 msgid "Addition"
@@ -37,7 +41,6 @@ msgid "Done!"
 msgstr ""
 
 #: Game.lean:3
-#: Game.lean:19
 msgid "Game Skeleton"
 msgstr ""
 
