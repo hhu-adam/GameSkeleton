@@ -44,4 +44,4 @@ jobs:
             game.zip
 
       - name: What next?
-        run: echo "To load the game to the game server, visit https://adam.math.hhu.de/import. \n Afterwards, you can play the game at https://adam.math.hhu.de/g/${GITHUB_REPOSITORY,,}"
+        run: echo "To load the game to the game server, visit https://adam-dev.math.hhu.de/import. \n Afterwards, you can play the game at https://adam-dev.math.hhu.de/g/${GITHUB_REPOSITORY,,}"
